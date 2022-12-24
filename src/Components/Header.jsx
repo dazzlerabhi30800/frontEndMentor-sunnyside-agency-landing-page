@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-hero-image-mobile flex flex-col gap-16 py-4 px-2">
+    <header className="flex flex-col gap-16 md:gap-24 py-4 px-2">
       <nav className="flex justify-between items-center p-2">
         <img src="./images/logo.svg" alt="" />
         <ul className={`nav--list ${click ? "active" : ""}`}>
@@ -22,13 +22,13 @@ const Header = () => {
           </li>
         </ul>
         <FontAwesomeIcon
-          className="cursor-pointer text-white"
+          className="cursor-pointer text-white md:hidden"
           onClick={handleClick}
           icon={click ? faTimes : faBars}
         />
       </nav>
       <h1 className="header--heading uppercase text-white font-bold mx-auto">
-        we are creative
+        we are creatives
       </h1>
       <img
         className="w-10 h-28 mx-auto"

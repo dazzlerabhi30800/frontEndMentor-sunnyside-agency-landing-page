@@ -20,6 +20,7 @@
 }
 
 header {
+  background: url("/public/images/mobile/image-header.jpg");
   height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,4 +85,40 @@ header ul li:last-child {
 }
 .nav--list li:last-child:hover {
   color: var(--Very-dark-grayish-blue);
+}
+
+@media Screen and (min-width: 768px) {
+  header {
+    background: url("/public/images/desktop/image-header.jpg");
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header--heading {
+    font-size: 3rem;
+    letter-spacing: 8px;
+  }
+  .nav--list {
+    position: static;
+    transform: translate(0px);
+    flex-direction: row;
+    width: fit-content;
+    padding: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .nav--list li {
+    color: #fff;
+  }
+  .nav--list li:last-child {
+    background: #fff;
+  }
+  .nav--list li:last-child:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+  }
+  .nav--list:after {
+    display: none;
+  }
 }
