@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
 :root {
   --Soft-red: hsl(7, 99%, 70%);
   --Yellow: hsl(51, 100%, 49%);
@@ -32,9 +33,11 @@ header {
   font-size: 2.5rem;
   text-align: center;
 }
+
 header ul {
   font-family: var(--font-Barlow);
 }
+
 header ul li:last-child {
   font-family: var(--font-Fraunces);
 }
@@ -56,9 +59,11 @@ header ul li:last-child {
   width: 80%;
   transition: all 0.3s linear;
 }
+
 .nav--list.active {
   top: 120px;
 }
+
 .nav--list:after {
   position: absolute;
   content: "";
@@ -69,20 +74,24 @@ header ul li:last-child {
   right: 0;
   top: -38px;
 }
+
 .nav--list li {
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s linear;
 }
+
 .nav--list li:hover {
   color: var(--Very-dark-desaturated-blue);
 }
+
 .nav--list li:last-child {
   background: yellow;
   color: var(--Very-dark-desaturated-blue);
   width: fit-content;
   border-radius: 30px;
 }
+
 .nav--list li:last-child:hover {
   color: var(--Very-dark-grayish-blue);
 }
@@ -91,24 +100,29 @@ header ul li:last-child {
 .first--wrapper {
   font-family: var(--font-Barlow);
 }
+
 .first--section p {
   font-weight: 600;
 }
+
 .first--section button {
   font-family: var(--font-Fraunces);
   font-weight: 900;
 }
+
 .first--section h2 {
   font-family: var(--font-Fraunces);
   font-size: 2rem;
   font-weight: 900;
   width: 50%;
 }
+
 .first--section .img--wrapper {
   height: 400px;
   display: flex;
   width: 100%;
 }
+
 .img--wrapper img {
   width: 100%;
   height: 400px;
@@ -122,16 +136,19 @@ header ul li:last-child {
   height: 650px;
   width: 100%;
 }
+
 .feature--wrapper h3 {
   font-family: var(--font-Fraunces);
   font-weight: 900;
 }
+
 .feature--wrapper p {
   font-family: var(--font-Barlow);
   min-width: 300px;
   width: 75%;
   max-width: 400px;
 }
+
 .photography--wrapper {
   background: url("/public/images/mobile/image-photography.jpg") no-repeat;
   background-size: cover;
@@ -143,13 +160,16 @@ header ul li:last-child {
 .testimonials--wrapper h4 {
   font-family: var(--font-Fraunces);
 }
+
 .testimonials p {
   width: 300px;
   font-family: var(--font-Barlow);
 }
+
 .bio--container .name {
   font-family: var(--font-Fraunces);
 }
+
 .bio--container .role {
   font-family: var(--font-Barlow);
   font-size: 0.9rem;
@@ -159,26 +179,27 @@ header ul li:last-child {
 .gallery {
   height: 280px;
 }
+
 .gallery:nth-child(1) {
-  background: url("/public/images/mobile/image-gallery-milkbottles.jpg")
-    no-repeat center;
+  background: url("/public/images/mobile/image-gallery-milkbottles.jpg") no-repeat center;
   background-size: cover;
 }
+
 .gallery:nth-child(2) {
-  background: url("/public/images/mobile/image-gallery-orange.jpg") no-repeat
-    center;
+  background: url("/public/images/mobile/image-gallery-orange.jpg") no-repeat center;
   background-size: cover;
 }
+
 .gallery:nth-child(3) {
-  background: url("/public/images/mobile/image-gallery-cone.jpg") no-repeat
-    center;
+  background: url("/public/images/mobile/image-gallery-cone.jpg") no-repeat center;
   background-size: cover;
 }
+
 .gallery:nth-child(4) {
-  background: url("/public/images/mobile/image-gallery-sugar-cubes.jpg")
-    no-repeat center;
+  background: url("/public/images/mobile/image-gallery-sugar-cubes.jpg") no-repeat center;
   background-size: cover;
 }
+
 footer {
   font-family: var(--font-Barlow);
 }
@@ -191,10 +212,12 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
   }
+
   .header--heading {
     font-size: 3rem;
     letter-spacing: 8px;
   }
+
   .nav--list {
     position: static;
     transform: translate(0px);
@@ -204,72 +227,91 @@ footer {
     background: transparent;
     box-shadow: none;
   }
+
   .nav--list li {
     color: #fff;
   }
+
   .nav--list li:last-child {
     background: #fff;
   }
+
   .nav--list li:last-child:hover {
     background: rgba(255, 255, 255, 0.4);
     color: #000;
   }
+
   .nav--list:after {
     display: none;
   }
+
   /* First Section */
   .first--section h2 {
     width: 50%;
   }
+
   .first--section .second {
     width: 70%;
   }
+
   .img--wrapper {
     width: 100%;
+    height: 500px;
   }
+
+  .img--wrapper img {
+    height: 500px;
+  }
+
+  .text--wrapper {
+    height: 500px;
+  }
+
   .text--wrapper {
     width: 100%;
   }
+
   /* Features Wrapper */
   .photography--wrapper {
-    background: url("/public/images/desktop/image-photography.jpg") no-repeat
-      center;
+    background: url("/public/images/desktop/image-photography.jpg") no-repeat center;
     background-size: cover;
     height: 550px;
     width: 100%;
   }
+
   .graphic--wrapper {
-    background: url("/public/images/desktop/image-graphic-design.jpg") no-repeat
-      center;
+    background: url("/public/images/desktop/image-graphic-design.jpg") no-repeat center;
     background-size: cover;
     height: 550px;
     width: 100%;
   }
+
   .feature--wrapper p {
     width: 350px;
   }
+
   /* Gallery Wrapper */
   .gallery {
-    height: 300px;
+    height: 400px;
   }
+
   .gallery:nth-child(1) {
-    background: url("/public/images/desktop/image-gallery-milkbottles.jpg")
-      no-repeat center;
+    background: url("/public/images/desktop/image-gallery-milkbottles.jpg") no-repeat center;
     background-size: cover;
   }
+
   .gallery:nth-child(2) {
-    background: url("/public/images/desktop/image-gallery-orange.jpg") no-repeat
-      center;
+    background: url("/public/images/desktop/image-gallery-orange.jpg") no-repeat center;
     background-size: cover;
   }
+
   .gallery:nth-child(3) {
-    background: url("/public/images/desktop/image-gallery-cone.jpg") no-repeat
-      center;
+    background: url("/public/images/desktop/image-gallery-cone.jpg") no-repeat center;
     background-size: cover;
   }
+
   .gallery:nth-child(4) {
-    background: url("/public/images/desktop/image-gallery-sugarcubes.jpg")
-      no-repeat center;
+    background: url("/public/images/desktop/image-gallery-sugarcubes.jpg") no-repeat center;
     background-size: cover;
   }
 }

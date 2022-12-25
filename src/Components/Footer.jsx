@@ -10,16 +10,16 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-12 items-center py-8 bg-emerald-300">
+    <footer className="flex flex-col gap-14 items-center py-14 bg-emerald-300">
       <Logo />
       <ul className="links flex gap-8 items-center">
-        <li className="text-emerald-600 transition ease-in hover:text-emerald-900 cursor-pointer">
+        <li className="text-emerald-600 transition duration-300 ease-in hover:text-emerald-900 cursor-pointer">
           About
         </li>
-        <li className="text-emerald-600 transition ease-in hover:text-emerald-900 cursor-pointer">
+        <li className="text-emerald-600 transition duration-300 ease-in hover:text-emerald-900 cursor-pointer">
           Services
         </li>
-        <li className="text-emerald-600 transition ease-in hover:text-emerald-900 cursor-pointer">
+        <li className="text-emerald-600 transition duration-300 ease-in hover:text-emerald-900 cursor-pointer">
           Projects
         </li>
       </ul>

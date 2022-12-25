@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="testimonials--wrapper gap-6 flex flex-col justify-center items-center text-center py-6 px-4">
+    <div className="testimonials--wrapper gap-14 flex flex-col justify-center items-center text-center py-10 px-4">
       <h4 className="title text-2xl uppercase tracking-widest text-slate-400">
         client testimonials
       </h4>
