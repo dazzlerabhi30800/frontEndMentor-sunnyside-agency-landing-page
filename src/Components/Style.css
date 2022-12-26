@@ -97,11 +97,8 @@ header ul li:last-child {
 }
 
 .arrow-style {
-  transform: translate(-600px, -130px) rotate(180deg);
-  transition: transform 0.5s linear;
-}
-.arrow-style.show {
-  transform: translate(0px, 40px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* First Section */
