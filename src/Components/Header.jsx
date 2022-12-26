@@ -1,16 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const arrow = useRef();
+  const [move, setMove] = useState(false);
   const handleClick = () => {
     setClick(!click);
   };
 
+  const handleMove = () => {
+    if (window.innerWidth >= 768) {
+      setMove(true);
+    } else {
+      setMove(false);
+    }
+  };
+  window.addEventListener("resize", handleMove);
+  useEffect(() => {
+    handleMove();
+  }, []);
+
+  window.addEventListener("scroll", () => {
+    let scroll = window.scrollY;
+    let arrowImg = arrow.current;
+    if (move) {
+      arrowImg.style.transform = `translateX(-${scroll}px) rotate(${-scroll}deg)`;
+    } else {
+      arrowImg.style.transform = `translateX(0px) rotate(0deg)`;
+    }
+    // console.log(arrowImg.classList);
+  });
+
   return (
-    <header className="flex flex-col gap-16 md:gap-24 py-4 px-2">
+    <header className="flex flex-col gap-16 md:gap-40 py-4 px-2">
       <nav className="flex justify-between items-center p-2">
         <img src="./images/logo.svg" alt="" />
         <ul className={`nav--list ${click ? "active" : ""}`}>
@@ -31,10 +56,11 @@ const Header = () => {
         we are creatives
       </h1>
       <img
-        className="w-10 h-28 mx-auto"
+        className="w-10 h-28 mx-auto arrow-style"
         src="./images/icon-arrow-down.svg"
         arid-hidden="true"
         alt=""
+        ref={arrow}
       />
     </header>
   );
