@@ -22,7 +22,7 @@
 
 header {
   background: url("/public/images/mobile/image-header.jpg");
-  height: 70vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,6 +62,7 @@ header ul li:last-child {
 
 .nav--list.active {
   top: 120px;
+  z-index: 44;
 }
 
 .nav--list:after {
