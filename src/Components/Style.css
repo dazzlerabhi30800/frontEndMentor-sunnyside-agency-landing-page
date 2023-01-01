@@ -20,6 +20,11 @@
   --font-Fraunces: "Fraunces", sans-serif;
 }
 
+::selection {
+  color: cyan;
+  background: yellow;
+}
+
 header {
   background: url("/public/images/mobile/image-header.jpg");
   height: 100vh;
